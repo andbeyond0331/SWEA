@@ -1,0 +1,8 @@
+def breadth_first_search(problem):
+
+	# a FIFO open_set
+	open_set = Queue()
+	# an empty set to maintain visited nodes
+	closed_set = set()
+	# a dictionary to maintain meta information(used for path formation)
+	meta = dict() # key -> (parent state, action to reach child)
